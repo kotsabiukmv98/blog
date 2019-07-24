@@ -191,7 +191,52 @@ header {
   background: rgba(0,0,0,.85);
   cursor: default;
 }
+main{
+  height: 1000px;
+  background-color: #ffebcd;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
 
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  
+  vertical-align: middle;
+}
+article:hover .img-wrapper img{
+  -webkit-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  -ms-transform:scale(1.5);
+  -o-transform:scale(1.5);
+  transform:scale(1.5); 
+}
+
+.grid .text {
+  padding: 20px;
+}
+  
 @supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop,
@@ -248,6 +293,9 @@ header {
   .logo {
     margin-top: 10px;
   }
+
+
+ 
 }
 
 
