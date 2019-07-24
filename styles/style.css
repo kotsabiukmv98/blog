@@ -42,30 +42,40 @@ header {
   color: #c00;
 }
 
+.header-rihgt-content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  margin-right: 10px;
+}
+
 .icons{
   align-self: flex-start;
   justify-self: right;
   margin-left: auto;
 }
 .logo {
-  margin: 10px 30px 10px 10px;
+  margin: 60px 30px 10px 10px;
   width: 100px;
   height: auto;
   align-self: center;
 }
   
 .fa {
-  padding: 7px;
+  padding: 15px 10px;
   font-size: 30px;
   width: 30px;
-  height: 30px;
-  
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
   margin: 5px 2px;
-  display: block;
+  border-radius: 50%;
   background: orange;
+}
+
+.fa:hover {
+  opacity: 0.7;
 }
 
 .fa.fa-facebook {
@@ -82,15 +92,17 @@ header {
   color: #cb2027;
 }
 .fa.fa-search{
-    margin-right: 50px;
+    margin-right: 10px;
 }
-.header-rihgt-content
+.fa.fa-bars,
+.fa.fa-close
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 120px;
-  margin-right: 10px;
+  background: none;
+}
+
+.icons a{
+  display: none;
+
 }
 
 .main-menu {
@@ -101,14 +113,13 @@ header {
   left: -200px;
   top: 0;
   height: 100%;
-	overflow-y: auto;
-	overflow-x: auto;
 	transition: left 0.3s ease,
 				      box-shadow 0.3s ease;
 	z-index: 999;
 }
 
 .main-menu ul {
+  overflow: hidden;
   list-style: none;
   margin: 0;
   padding: 2.5em 0 0;
@@ -212,10 +223,13 @@ header {
     height: auto;
     width: auto;
     background: none;
+    overflow: hidden;
   }
   
   .main-menu a {
-    color: #06c;
+    color: #333;
+    font-size: 10;
+    font-weight: bold;
     border: 0 !important;
   }
   
@@ -223,6 +237,16 @@ header {
   .main-menu a:focus {
     background: none;
     color: #c00;
+  }
+
+  .fa.fa-search{
+    margin-right: 50px;
+  }
+  .icons a{
+    display: inline-block;
+  }
+  .logo {
+    margin-top: 10px;
   }
 }
 
