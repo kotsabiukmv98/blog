@@ -192,8 +192,8 @@ header {
   cursor: default;
 }
 main{
-  height: 1000px;
-  background-color: #ffebcd;
+  /* height: 1000px; */
+  background-color: white;
 }
 .grid {
   display: grid;
@@ -236,7 +236,36 @@ article:hover .img-wrapper img{
 .grid .text {
   padding: 20px;
 }
-  
+ 
+article .text h3{
+  color: orange;
+  font-weight: bold;
+}
+
+article .text p{
+  margin-bottom: 10px;
+  margin-top:  10px;
+}
+
+article .text a{
+  color: orange;
+  font-size: 10;
+  font-weight: bold;
+}
+.grid .text .info-wrapper{
+  position: relative;
+  bottom: 0;
+}
+.grid .text .info-wrapper span{
+  display: block;
+  margin-top: 10px;
+}
+.grid .text .info-wrapper span .fa{
+  background: none;
+  padding: 0;
+  margin-left: -8px;
+}
+
 @supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop,
@@ -293,9 +322,6 @@ article:hover .img-wrapper img{
   .logo {
     margin-top: 10px;
   }
-
-
- 
 }
 
 
