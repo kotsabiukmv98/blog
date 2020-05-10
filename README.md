@@ -4,7 +4,7 @@ Blog web-site. Visit it [here](https://mkotsabiuk.github.io/blog/)
 
 ## Demo
 
-![](blog/images/blog.gif)
+![](https://github.com/mkotsabiuk/blog/blob/master/images/blog.gif)
 
 ## Run it locally
 
